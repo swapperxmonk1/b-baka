@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "src": "/monk/(.*)",
+      "dest": "/monk/$1"
+    },
+    {
+      "src": "/monk",
+      "dest": "/monk/index.html",
+      "headers": {
+        "Cache-Control": "no-cache"
+      }
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
