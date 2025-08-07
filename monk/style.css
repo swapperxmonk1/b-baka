@@ -23,7 +23,7 @@ body{background:#000;height:100vh;display:flex;justify-content:center;align-item
 .aa{color:#aaa;font-size:0.7rem}
 .ab{margin-top:8px}
 .ac{height:2px;background:#333;border-radius:1px;overflow:hidden}
-.ad{height:100%;background:#1db954;width:0%}
+.ad{height:100%;background:#000000;width:0%}
 .ae{display:flex;justify-content:space-between;margin-top:4px;font-size:0.6rem;color:#777}
 .p{display:flex;gap:12px;margin-top:20px}
 .q{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s;background:#222}
