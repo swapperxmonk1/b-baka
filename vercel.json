@@ -1,17 +1,7 @@
 {
-  "routes": [
-    {
-      "src": "/monk/(.*)",
-      "dest": "/monk/$1"
-    },
-    {
-      "src": "/monk",
-      "dest": "/monk/index.html",
-      "headers": {
-        "Cache-Control": "no-cache"
-      }
-    }
+  "rewrites": [
+    { "source": "/monk", "destination": "/monk/index.html" },
+    { "source": "/monk/(.*)", "destination": "/monk/$1" }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "cleanUrls": true
 }
