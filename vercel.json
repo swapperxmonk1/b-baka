@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/loader/vbl.lua",
-      "destination": "/api/gof"
-    }
-  ]
-}
