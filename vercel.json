@@ -1,16 +1,19 @@
 {
   "routes": [
-    { "handle": "filesystem" },
-    
+    {
+      "src": "/monk/(.*)",
+      "dest": "/monk/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      }
+    },
     {
       "src": "/monk",
       "dest": "/monk/index.html",
-      "status": 200
-    },
-    
-    {
-      "src": "/monk/(.*)",
-      "dest": "/monk/$1"
+      "headers": {
+        "Cache-Control": "no-cache"
+      }
     }
-  ]
+  ],
+  "cleanUrls": true
 }
